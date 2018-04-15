@@ -13,11 +13,10 @@
   "author": "Sai G",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "~1.0.1",
-    "express": "~4.0.0",
-    "file-system": "^2.2.2",
+    "body-parser": "latest",
+    "express": "latest",
+    "file-system": "latest",
     "fs": "latest",
-    "mongoose": "~3.6.13",
     "request": "latest"
   }
 }
