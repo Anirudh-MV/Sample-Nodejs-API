@@ -71,7 +71,7 @@ additional parameter can be passed into url to filter the list as:
 The application also handles the errors nicely and displays it to user as a HTML clearly and was built using pub framework
 
 when a filter was provided and the list doesn't contain the product then a response is generated as follows:
-
+## Error Handling
 ```
 ## Please Verify the data entered
 ## {error.stack: No Data Matched with the list}
