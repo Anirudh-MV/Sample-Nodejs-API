@@ -8,7 +8,7 @@ The App is built and run as below
 
 ### Installing and running:
 
-To run the app just intall the required dependencies and and hit npm start i.e.
+To run the app just intall the required dependencies and and hit node app.js i.e.
 
 ---> Go to the project directory and
 
