@@ -23,9 +23,9 @@ The APP is to give an idea about how to generate & call GET APIs using nodejs an
 |
 |\_\_ APIS : /api/products
 /api/inventory
-/productList
+/api/productList
 or
-/productList/:productName
+/api/productList/:productName
 
 Data obtained for each of the APIs is as follows for example:
 
@@ -66,7 +66,7 @@ And repeat
 ```
 
 additional parameter can be passed into url to filter the list as:
-/product/shirt i.e. /product/:productName
+/api/product/shirt i.e. /api/product/:productName
 
 The application also handles the errors nicely and displays it to user as a HTML clearly and was built using pub framework
 
@@ -110,12 +110,27 @@ http://localhost:8080/
 
 follow shown API endpoints to see the data
 
-## Datasource folder
+## apis
 
-This is folder is just for reference if in case you want to use to get the data initially, you can replace the path in below files:
+This is the main file which contains the business logic for APIs
+
+## Error Handling
+
+If a wrong end point is entered the service returns a HTML error response
+
+for example
 
 ```
-product.js
-productList.js
-inventory.js
+calling a wrong endpoint as /api/inventor gives as follows:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Error</title>
+    </head>
+    <body>
+        <pre>Cannot GET /api/inventor</pre>
+    </body>
+</html>
 ```
