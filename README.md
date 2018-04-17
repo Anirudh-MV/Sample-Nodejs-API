@@ -6,7 +6,7 @@ A NodeJs Express application that servers product store APIs for the customer, c
 
 The App is built and run as below
 
-### Installing and running
+### Installing and running:
 
 To run the app just intall the required dependencies and and hit npm start i.e.
 
@@ -17,7 +17,7 @@ npm install
 node app.js
 ```
 
-### API sources and information
+### API sources and information:
 
 The APP is to give an idea about how to generate & call GET APIs using nodejs and express. I've initially called a GET API to get the data and create three GET APIs, two reflects the same called API and other aggregated list of called API that is generated from the above two APIs. We can pass in a filter that filters the product list from the available all the list of products.
 |
@@ -93,7 +93,7 @@ The application also handles the errors nicely and displays it to user as a HTML
 
 when a filter was provided and the list doesn't contain the product then a response is generated as follows:
 
-## Error Handling
+### Error Handling
 
 ```
 ## Please Verify the data entered
@@ -139,7 +139,7 @@ follow shown API endpoints to see the data
 
 This is the main file which contains the business logic for APIs
 
-## Error Handling
+### Error Handling
 
 If a wrong end point is entered the service returns a HTML error response
 
