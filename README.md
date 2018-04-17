@@ -139,7 +139,7 @@ follow shown API endpoints to see the data
 
 This is the main file and directory structure of the project is as follows which contains the business logic for APIs. And apis is the folder that contains the serice logic for the APIs
 
-----
+```
    |__ app.js file
    |
    |__ lib
