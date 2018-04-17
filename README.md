@@ -6,7 +6,7 @@ A NodeJs Express application that servers product store APIs for the customer, c
 
 The App is built and run as below
 
-### Installing
+### Installing and running
 
 To run the app just intall the required dependencies and and hit npm start i.e.
 
@@ -21,8 +21,8 @@ node app.js
 
 The APP is to give an idea about how to generate & call GET APIs using nodejs and express. I've initially called a GET API to get the data and create three GET APIs, two reflects the same called API and other aggregated list of called API that is generated from the above two APIs. We can pass in a filter that filters the product list from the available all the list of products.
 |
-|\_\_ APIS : /api/products
-/api/inventory
+|\_\_ APIS : /api/products or /api/products/:productName
+/api/inventory or /api/inventory/:invetoryName
 /api/productList
 or
 /api/productList/:productName
@@ -40,6 +40,16 @@ Data obtained for each of the APIs is as follows for example:
     ....
 ```
 
+### /api/products/:productName:
+
+```
+[
+    {
+      "name": "shirt",
+      "price": 15
+    },
+```
+
 ### /api/inventory
 
 ```
@@ -50,6 +60,17 @@ Data obtained for each of the APIs is as follows for example:
         "inventory": 12
       },
     ....
+```
+
+### /api/inventory/:inventoryName
+
+```
+{
+    "inventory": [
+      {
+        "name": "shirt",
+        "inventory": 12
+      }
 ```
 
 ### /productList
@@ -72,6 +93,8 @@ The application also handles the errors nicely and displays it to user as a HTML
 
 when a filter was provided and the list doesn't contain the product then a response is generated as follows:
 
+## Error Handling
+
 ```
 ## Please Verify the data entered
 ## {error.stack: No Data Matched with the list}
@@ -80,6 +103,8 @@ when a filter was provided and the list doesn't contain the product then a respo
 other errors with related to code are also thrown in the same way.
 
 The application api call without defining the API i.e. just using a GET '/' or GET '/api/' will return a response as below
+
+## Welcome Message
 
 ```
 {
