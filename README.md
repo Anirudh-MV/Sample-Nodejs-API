@@ -120,7 +120,7 @@ The server when we run
 node app.js
 ```
 
-is hosted at, FYI we can easily change the port when we host it my changing the value of port in
+is hosted at, FYI we can easily change the port when we host it by changing the value of port in
 
 ```
 ----
@@ -137,7 +137,25 @@ follow shown API endpoints to see the data
 
 ## apis
 
-This is the main file which contains the business logic for APIs
+This is the main file and directory structure of the project is as follows which contains the business logic for APIs. And apis is the folder that contains the serice logic for the APIs
+
+----
+   |__ app.js file
+   |
+   |__ lib
+        |
+        |___ apis
+        |      |___ productApi.js
+        |      |___ PrdAndInv.js
+        |
+        |______model
+        |        |____ service.js
+        |
+        |________ repo
+                    |___ inventory.js
+                    |____ products.js
+        
+```
 
 ### Error Handling
 
